@@ -17,7 +17,7 @@ function Nav() {
                 </ul>
             </div>
             <div className={styles.btns}>
-                <button onclick={vibrate} className={styles.gsbtn}>Get Started</button>
+                <button onClick={vibrate} className={styles.gsbtn}>Get Started</button>
                 <img src="/menu.png" alt="" />
             </div>
         </div >
