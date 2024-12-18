@@ -40,8 +40,18 @@
     cursor: pointer;
 }
 
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns img{
+    display: none;
+}
+
 .gsbtn{
-    padding: .65vw 1.5vw;
+    padding: .4vw 1.5vw;
     background: #2563ea;
     border: none;
     border-radius: 5px;
@@ -53,4 +63,26 @@
 
 .gsbtn:hover{
     background: #15409c;
+}
+
+@media screen and (max-width: 700px) {
+    .nav ul{
+        display: none;
+    }
+
+    .btns button{
+        display: none;
+    }
+    .btns img{
+        display: block;
+        transition: all 0.2s ease;
+    }
+
+    .btns img:hover{
+        cursor: pointer;
+    }
+
+    .btns img:active{
+        transform: scale(1.1);
+    }
 }

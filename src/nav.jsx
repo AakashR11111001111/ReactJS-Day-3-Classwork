@@ -13,8 +13,9 @@ function Nav() {
                     <li><a href="#">Contacts</a></li>
                 </ul>
             </div>
-            <div>
+            <div className={styles.btns}>
                 <button className={styles.gsbtn}>Get Started</button>
+                <img src="/menu.png" alt="" />
             </div>
         </div >
     )
