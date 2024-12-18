@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from './nav.module.css'
 function Nav() {
+    function vibrate(){
+        navigator.vibrate(50);
+    }
     return (
         <div className={styles.nav}> 
-            <h1>Logo</h1>
+            <h1>Foodiees</h1>
             <div> 
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -14,7 +17,7 @@ function Nav() {
                 </ul>
             </div>
             <div className={styles.btns}>
-                <button className={styles.gsbtn}>Get Started</button>
+                <button onclick={vibrate} className={styles.gsbtn}>Get Started</button>
                 <img src="/menu.png" alt="" />
             </div>
         </div >
